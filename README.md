@@ -180,14 +180,14 @@ Recommended:
 If you'd like to talk, collaborate, or just say hello:
 
 <p align="left">
-  <a href="https://github.com/username">
+  <a href="https://github.com/sabiru7">
     <img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" />
   </a>
-  <a href="https://linkedin.com/in/username">
-    <img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=white" />
+  <a href="https://guns.lol/sakadev">
+    <img src="https://img.shields.io/badge/guns.lol-111111?style=flat-square&logo=link&logoColor=white" />
   </a>
-  <a href="mailto:your@email.com">
-    <img src="https://img.shields.io/badge/Email-111111?style=flat-square&logo=gmail&logoColor=white" />
+  <a href="https://dsc.gg/altherial">
+    <img src="https://img.shields.io/badge/Discord-111111?style=flat-square&logo=discord&logoColor=white" />
   </a>
 </p>
 
