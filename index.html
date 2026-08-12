@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>sakadev — Solo Developer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body class="bg-black text-white antialiased overflow-x-hidden">
+
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="glow glow-purple"></div>
+    <div class="glow glow-cyan"></div>
+
+    <div class="grid-background"></div>
+
+    <div class="vignette"></div>
+  </div>
+
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 px-4 py-5">
+
+    <div class="nav-container">
+
+      <a href="#home" class="logo">
+        SAKADEV<span>.</span>
+      </a>
+
+      <div class="desktop-nav">
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#stack">STACK</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+
+      <button id="menu-button" class="mobile-menu-button">
+        MENU
+      </button>
+
+      <a href="https://guns.lol/sakadev" class="talk-button">
+        LET'S TALK ↗
+      </a>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+
+      <a href="#about">ABOUT</a>
+      <a href="#work">WORK</a>
+      <a href="#stack">STACK</a>
+      <a href="#contact">CONTACT</a>
+
+    </div>
+
+  </nav>
+
+
+  <main class="relative z-10">
+
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+
+      <div class="hero-content">
+
+        <div data-reveal>
+
+          <div class="availability">
+            <span></span>
+            AVAILABLE FOR HIRE PROJECTS
+          </div>
+
+          <p class="eyebrow">
+            HELLO, I'M
+          </p>
+
+          <h1 class="hero-title">
+
+            SABIL
+
+            <br>
+
+            <span data-glitch>EKA</span>
+
+          </h1>
+
+          <p class="hero-description">
+
+            Creative Developer yang membangun
+
+            <strong>digital experiences</strong>
+
+            yang terasa cepat, hidup, dan sedikit
+
+            <em>tidak masuk akal.</em>
+
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a href="#work" class="magnetic primary-button">
+              EXPLORE MY WORK
+              <span>→</span>
+            </a>
+
+            <a href="#contact" class="magnetic secondary-button">
+              START A PROJECT
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Experimental Orb -->
+
+        <div class="hero-orb" data-reveal>
+
+          <div class="orb-ring ring-1"></div>
+          <div class="orb-ring ring-2"></div>
+          <div class="orb-ring ring-3"></div>
+
+          <div class="orb-glow"></div>
+
+          <div class="orb-core">
+            <span>SKILLS</span>
+          </div>
+
+          <div class="floating-label label-1">
+            &lt;/develop&gt;
+          </div>
+
+          <div class="floating-label label-2">
+            javascript, node.js, react
+          </div>
+
+          <div class="floating-label label-3">
+            html, css, tailwind
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="scroll-indicator">
+        SCROLL TO EXPLORE ↓
+      </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+
+    <section class="marquee-section">
+
+      <div class="marquee">
+
+        <div class="marquee-content">
+
+          <span>CREATIVE DEVELOPMENT</span>
+          <b>✦</b>
+
+          <span>BACKEND ENGINEERING</span>
+          <b>✦</b>
+
+          <span>SOFTWARE</span>
+          <b>✦</b>
+
+          <span>INTERACTIVE WEB</span>
+          <b>✦</b>
+
+          <span>CREATIVE DEVELOPMENT</span>
+          <b>✦</b>
+
+          <span>BACKEND ENGINEERING</span>
+          <b>✦</b>
+
+          <span>SOFTWARE</span>
+          <b>✦</b>
+
+          <span>INTERACTIVE WEB</span>
+          <b>✦</b>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section">
+
+      <div class="section-grid">
+
+        <div data-reveal>
+          <span class="section-number">
+            01 / ABOUT
+          </span>
+        </div>
+
+        <div data-reveal>
+
+          <h2 class="large-heading">
+
+            LETS GET TO <span> KNOW ME. </span>
+          </h2>
+
+          <div class="about-text">
+
+            <p>
+              Saya adalah seorang backend developer yang berfokus pada pengembangan web dan software. 
+              Saya memiliki pengalaman dalam membangun produk digital yang inovatif dan interaktif.
+            </p>
+
+            <p>
+              Saya senang menggabungkan teknologi dengan desain
+              eksperimental untuk membuat produk yang bukan hanya
+              bekerja dengan baik, tetapi juga memiliki karakter.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WORK -->
+
+    <section id="work" class="section">
+
+      <div class="work-header">
+
+        <div data-reveal>
+
+          <span class="section-number">
+            02 / SELECTED WORK
+          </span>
+
+          <h2 class="work-title">
+            PROJECTS 
+            <br>
+            <span>I BUILT.</span>
+          </h2>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div id="filters" class="filters">
+
+          <button
+            class="filter-button active"
+            data-filter="all">
+            ALL
+          </button>
+
+          <button
+            class="filter-button"
+            data-filter="web">
+            WEB
+          </button>
+
+          <button
+            class="filter-button"
+            data-filter="mobile">
+            SOFTWARE
+          </button>
+
+          <button
+            class="filter-button"
+            data-filter="ai">
+            AI
+          </button>
+
+        </div>
+
+      </div>
+
+
+<!-- =========================================
+     PROJECT GRID
+========================================= -->
+
+<div id="project-grid" class="project-grid">
+
+  <!-- PROJECT 1 -->
+  <article
+    class="project-card project-large project-alpha"
+    data-category="web"
+    data-reveal>
+
+    <div class="project-inner">
+
+      <!-- GAMBAR PROJECT -->
+      <img
+        src="images/project-alpha.jpg"
+        alt="Project Alpha"
+        class="project-image"
+      >
+
+      <span class="project-number">001</span>
+
+      <span class="project-type">WEB APP</span>
+
+      <div class="project-content">
+
+        <div class="project-symbol">◈</div>
+
+        <h3>Project Alpha</h3>
+
+        <p>
+          Platform digital eksperimental dengan fokus
+          pada dashboard, visualisasi data, dan interaction.
+        </p>
+
+        <div class="technologies">
+          <span>React</span>
+          <span>Tailwind</span>
+          <span>Node.js</span>
+        </div>
+
+      </div>
+
+      <a href="#" class="project-arrow" aria-label="Open Project Alpha">
+        ↗
+      </a>
+
+    </div>
+  </article>
+
+
+  <!-- PROJECT 2 -->
+  <article
+    class="project-card project-neural"
+    data-category="ai"
+    data-reveal>
+
+    <div class="project-inner">
+
+      <img
+        src="images/neural-interface.jpg"
+        alt="Neural Interface"
+        class="project-image"
+      >
+
+      <span class="project-number">002 / AI</span>
+
+      <div class="project-content">
+
+        <h3>Neural Interface</h3>
+
+        <p>
+          Eksperimen interface berbasis AI untuk
+          conversational experience.
+        </p>
+
+        <div class="technologies">
+          <span>AI</span>
+          <span>JavaScript</span>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- PROJECT 3 -->
+  <article
+    class="project-card project-pocket"
+    data-category="mobile"
+    data-reveal>
+
+    <div class="project-inner">
+
+      <img
+        src="assets/images/discord.png"
+        alt="Pocket Flow"
+        class="project-image"
+      >
+
+      <span class="project-number">003 / MOBILE</span>
+
+      <div class="project-content">
+
+        <div class="project-symbol">◎</div>
+
+        <h3>Server discord</h3>
+
+        <p>
+          Software dengan build di discord server
+          dengan sesuai kebutuhan client.
+        </p>
+
+        <div class="technologies">
+          <span>React Native</span>
+          <span>Expo</span>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- PROJECT 4 -->
+  <article
+    class="project-card project-wide project-sakadev"
+    data-category="web"
+    data-reveal>
+
+    <div class="project-inner">
+
+      <img
+        src="assets/images/portofolio.png"
+        alt="Portfolio"
+        class="project-image"
+      >
+
+      <span class="project-number">
+        004 / PORTOFOLIO WEB
+      </span>
+
+      <div class="project-content">
+
+        <h3>PORTFOLIO</h3>
+
+        <p>
+          Projek pertama portofolio saya dalam 3 tahun terakhir,
+          yang menampilkan beberapa karya dan eksperimen digital
+          yang saya buat.
+        </p>
+
+        <div class="technologies">
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+</div>
+
+
+    <!-- STACK -->
+
+    <section id="stack" class="section stack-section">
+
+      <div class="section-grid">
+
+        <div>
+          <span class="section-number">
+            03 / TOOLBOX
+          </span>
+        </div>
+
+        <div data-reveal>
+
+          <h2 class="large-heading">
+            MY DIGITAL
+            <span>WEAPONS.</span>
+          </h2>
+
+
+          <div class="stack-grid">
+
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JAVASCRIPT</div>
+            
+
+            <div>TAILWIND</div>
+            <div>NODE.JS</div>
+
+            <div>GIT</div>
+            <div>FIGMA</div>
+            <div>AI</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+
+      <div data-reveal>
+
+        <span class="section-number">
+          04 / CONTACT
+        </span>
+
+        <h2 class="contact-title">
+
+          HAVE AN
+          <span>IDEA?</span>
+
+        </h2>
+
+        <p class="contact-description">
+
+          Kalau kamu punya project, startup,
+          eksperimen, atau sekadar ide aneh
+          yang ingin diwujudkan, let's talk.
+
+        </p>
+
+        <a
+          href="mailto:sabilmicrosoft12@gmail.com"
+          class="magnetic email-button">
+
+          sabilmicrosoft12@gmail.com
+
+          <span>↗</span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <span>
+      © <span id="year"></span> Sakadev
+    </span>
+
+    <span>
+      BUILT WITH CURIOSITY + CAFFEINE
+    </span>
+
+    <span>
+      INDONESIA ↗
+    </span>
+
+  </footer>
+
+
+  <!-- COMMAND PALETTE -->
+
+  <div id="command-palette" class="command-overlay hidden">
+
+    <div class="command-box">
+
+      <input
+        id="command-input"
+        type="text"
+        placeholder="Type a command..."
+      >
+
+      <div class="command-list">
+
+        <a href="#home" class="command-item">
+          <span>Go to Home</span>
+          <kbd>⌘1</kbd>
+        </a>
+
+        <a href="#about" class="command-item">
+          <span>About Me</span>
+          <kbd>⌘2</kbd>
+        </a>
+
+        <a href="#work" class="command-item">
+          <span>Explore Work</span>
+          <kbd>⌘3</kbd>
+        </a>
+
+        <a href="#contact" class="command-item">
+          <span>Contact</span>
+          <kbd>⌘4</kbd>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- HANYA INI YANG MEMANGGIL FILE JAVASCRIPT -->
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
