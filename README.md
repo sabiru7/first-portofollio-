@@ -2,77 +2,85 @@
 
 <div align="center">
 
-![Banner](https://capsule-render.vercel.app/api?type=waving\&color=0099ff\&height=220\&section=header\&text=PROJECT%20NAME\&fontSize=52\&fontColor=ffffff\&animation=fadeIn\&fontAlignY=35\&desc=Build%20Something%20Extraordinary\&descAlignY=58\&descSize=18)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0099ff&height=240&section=header&text=PROJECT%20NAME&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=NEXT-GENERATION%20DIGITAL%20EXPERIENCE&descAlignY=58&descSize=17&descColor=ffffff" width="100%" />
 
-### 🚀 Modern • Fast • Powerful • Beautiful
+<br>
 
-<p>
-  <img src="https://img.shields.io/badge/Status-Active-0099ff?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Version-1.0.0-111827?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-00d4ff?style=for-the-badge" />
-</p>
+### `⚡ BUILD • CREATE • INNOVATE • DOMINATE ⚡`
+
+<br>
+
+<a href="#-about-the-project">
+<img src="https://img.shields.io/badge/EXPLORE_PROJECT-0099FF?style=for-the-badge&logoColor=white" />
+</a>
+<a href="#-installation">
+<img src="https://img.shields.io/badge/GET_STARTED-00D4FF?style=for-the-badge&logoColor=050B14" />
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-0099FF?style=for-the-badge" />
+<img src="https://img.shields.io/badge/VERSION-1.0.0-111827?style=for-the-badge" />
+<img src="https://img.shields.io/badge/LICENSE-MIT-00D4FF?style=for-the-badge" />
 
 </div>
 
 ---
 
-## 🌌 About The Project
+<div align="center">
 
-> **PROJECT NAME** adalah sebuah project yang dirancang dengan fokus pada **performance, usability, dan futuristic user experience**.
+## 🌐 `WELCOME TO THE FUTURE`
 
-Interface dibuat dengan nuansa **deep dark + electric blue**, menggunakan warna utama:
+**PROJECT NAME** bukan sekadar project.
 
-```text
-PRIMARY     #0099FF
-CYAN        #00D4FF
-DARK        #050B14
-SURFACE     #0A1424
-TEXT        #F8FAFC
-MUTED       #94A3B8
-SUCCESS     #22C55E
-WARNING     #F59E0B
-ERROR       #EF4444
-```
+Ini adalah sebuah **digital experience** yang menggabungkan
+**performance · technology · aesthetics · simplicity**
+dalam satu interface yang agresif, modern, dan immersive.
 
-Tujuannya sederhana:
+<br>
 
-**Make it clean. Make it powerful. Make it unforgettable.**
+> **`The future doesn't wait. Build it.`**
+
+</div>
 
 ---
 
-## ✨ Features
+## 🧬 ABOUT THE PROJECT
 
 <table>
 <tr>
-<td width="50%">
+<td width="55%" valign="top">
 
-### ⚡ Performance
+### ⚡ What is this?
 
-Optimized untuk memberikan pengalaman yang cepat dan responsif.
+**PROJECT NAME** dibuat untuk menghadirkan pengalaman interface yang:
 
-</td>
-<td width="50%">
-
-### 🎨 Modern UI
-
-Design menggunakan kombinasi dark interface dan electric blue accent.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-### 📱 Responsive
-
-Nyaman digunakan pada desktop, tablet, maupun mobile.
+* 🚀 Super responsive
+* 🎨 Futuristic
+* 🧩 Modular
+* 📱 Fully responsive
+* ⚡ Performance-focused
+* 🌌 Immersive
+* 🧠 Developer-friendly
 
 </td>
-<td>
 
-### 🧩 Modular
+<td width="45%" valign="top">
 
-Struktur project dibuat agar mudah dikembangkan dan di-maintain.
+### 🔥 Core Identity
+
+```text
+╭──────────────────────╮
+│   PROJECT NAME       │
+├──────────────────────┤
+│                      │
+│  ⚡ SPEED            │
+│  ◈ DESIGN            │
+│  ◆ EXPERIENCE        │
+│  ◉ PERFORMANCE       │
+│                      │
+╰──────────────────────╯
+```
 
 </td>
 </tr>
@@ -80,125 +88,181 @@ Struktur project dibuat agar mudah dikembangkan dan di-maintain.
 
 ---
 
-## 🖥️ User Interface
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│  ◉ PROJECT NAME                         Dashboard  Settings  │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│       ┌──────────────────────────────────────────────┐       │
-│       │                                              │       │
-│       │        WELCOME TO THE FUTURE                │       │
-│       │                                              │       │
-│       │        Build. Create. Innovate.              │       │
-│       │                                              │       │
-│       │        [ GET STARTED ]                       │       │
-│       │                                              │       │
-│       └──────────────────────────────────────────────┘       │
-│                                                              │
-│   ┌────────────┐  ┌────────────┐  ┌────────────┐             │
-│   │   ⚡ 98%   │  │   🚀 24K   │  │   ✦ 99.9%  │             │
-│   │ Performance│  │  Requests  │  │  Uptime    │             │
-│   └────────────┘  └────────────┘  └────────────┘             │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 🎨 Design System
-
-### Primary Color
+# 🎨 DESIGN SYSTEM
 
 <div align="center">
 
-| Color |    HEX    | Usage                     |
-| :---: | :-------: | :------------------------ |
-|   🔵  | `#0099FF` | Primary / CTA / Highlight |
-|   🩵  | `#00D4FF` | Glow / Secondary Accent   |
-|   ⬛   | `#050B14` | Main Background           |
-|   🌑  | `#0A1424` | Card / Surface            |
-|   ⚪   | `#F8FAFC` | Primary Text              |
-|   ◽   | `#94A3B8` | Secondary Text            |
+### `ELECTRIC BLUE × DEEP SPACE`
 
 </div>
 
-### Visual Direction
-
-```css
-:root {
-  --primary: #0099FF;
-  --accent: #00D4FF;
-
-  --background: #050B14;
-  --surface: #0A1424;
-  --surface-hover: #0F1E33;
-
-  --text: #F8FAFC;
-  --text-muted: #94A3B8;
-
-  --success: #22C55E;
-  --warning: #F59E0B;
-  --error: #EF4444;
-
-  --glow:
-    0 0 20px rgba(0, 153, 255, 0.35);
-}
+```text
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│   ████████████████████  #0099FF  PRIMARY               │
+│   ████████████████████  #00D4FF  ELECTRIC CYAN         │
+│   ████████████████████  #050B14  DEEP SPACE            │
+│   ████████████████████  #0A1424  SURFACE               │
+│   ████████████████████  #0F1E33  SURFACE HOVER         │
+│   ████████████████████  #F8FAFC  PRIMARY TEXT          │
+│   ████████████████████  #94A3B8  MUTED TEXT            │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
 ```
+
+### 🎯 Color Tokens
+
+| Token             |   Value   | Purpose             |
+| :---------------- | :-------: | :------------------ |
+| 🔵 **Primary**    | `#0099FF` | CTA · Links · Focus |
+| 🩵 **Electric**   | `#00D4FF` | Glow · Highlights   |
+| 🌌 **Background** | `#050B14` | Main Background     |
+| 🌑 **Surface**    | `#0A1424` | Cards · Panels      |
+| 💠 **Hover**      | `#0F1E33` | Interactive Surface |
+| ⚪ **Text**        | `#F8FAFC` | Main Content        |
+| ◽ **Muted**       | `#94A3B8` | Secondary Content   |
+| 🟢 **Success**    | `#22C55E` | Success State       |
+| 🟡 **Warning**    | `#F59E0B` | Warning State       |
+| 🔴 **Error**      | `#EF4444` | Error State         |
 
 ---
 
-## 🧠 Architecture
+# 🖥️ INTERFACE PREVIEW
+
+```text
+╭──────────────────────────────────────────────────────────────╮
+│  ◉ PROJECT NAME                  DASHBOARD   DOCS   SETTINGS │
+├──────────────────────────────────────────────────────────────┤
+│                                                              │
+│                  ✦ SYSTEM ONLINE ✦                           │
+│                                                              │
+│              ┌─────────────────────────┐                     │
+│              │                         │                     │
+│              │   WELCOME TO THE        │                     │
+│              │   NEXT GENERATION       │                     │
+│              │                         │                     │
+│              │   Build without limits. │                     │
+│              │                         │                     │
+│              │   [  LAUNCH SYSTEM  ]   │                     │
+│              │                         │                     │
+│              └─────────────────────────┘                     │
+│                                                              │
+│    ┌──────────────┐ ┌──────────────┐ ┌──────────────┐        │
+│    │ ⚡ 98.9%     │ │ 🚀 24.8K     │ │ ◉ 99.99%     │        │
+│    │ PERFORMANCE  │ │ REQUESTS     │ │ UPTIME       │        │
+│    └──────────────┘ └──────────────┘ └──────────────┘        │
+│                                                              │
+╰──────────────────────────────────────────────────────────────╯
+```
+
+<div align="center">
+
+### `NOT JUST AN INTERFACE.`
+
+### `AN EXPERIENCE.`
+
+</div>
+
+---
+
+# ⚡ FEATURES
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+### ⚡
+
+**ULTRA FAST**
+
+Optimized architecture untuk response time yang cepat.
+
+</td>
+
+<td align="center" width="25%">
+
+### ◈
+
+**FUTURISTIC**
+
+Dark interface dengan electric-blue visual identity.
+
+</td>
+
+<td align="center" width="25%">
+
+### 📱
+
+**RESPONSIVE**
+
+Experience konsisten di berbagai ukuran layar.
+
+</td>
+
+<td align="center" width="25%">
+
+### 🧩
+
+**MODULAR**
+
+Komponen terstruktur dan mudah dikembangkan.
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🧠 ARCHITECTURE
 
 ```text
 PROJECT/
 │
-├── 📁 src/
-│   ├── 📁 components/
-│   ├── 📁 pages/
-│   ├── 📁 layouts/
-│   ├── 📁 hooks/
-│   ├── 📁 services/
-│   ├── 📁 utils/
-│   └── 📄 main.*
+├── ⚡ src/
+│   ├── components/
+│   ├── pages/
+│   ├── layouts/
+│   ├── hooks/
+│   ├── services/
+│   ├── utils/
+│   └── main.*
 │
-├── 📁 public/
+├── 🌐 public/
 │
-├── 📁 assets/
+├── 🎨 assets/
 │   ├── icons/
 │   ├── images/
 │   └── fonts/
 │
-├── 📄 README.md
-├── 📄 package.json
-└── 📄 LICENSE
+├── 📦 package.json
+├── 📘 README.md
+└── ⚖️ LICENSE
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 INSTALLATION
 
-### 1. Clone Repository
+### 01 — Clone
 
 ```bash
 git clone https://github.com/username/project-name.git
 cd project-name
 ```
 
-### 2. Install Dependencies
+### 02 — Install
 
 ```bash
 npm install
 ```
 
-### 3. Run Development Server
+### 03 — Launch
 
 ```bash
 npm run dev
 ```
 
-### 4. Build Production
+### 04 — Production
 
 ```bash
 npm run build
@@ -206,133 +270,126 @@ npm run build
 
 ---
 
-## 🔥 UI Philosophy
-
-Project ini menggunakan prinsip:
-
-```text
-        ┌───────────────────┐
-        │     SIMPLICITY    │
-        └─────────┬─────────┘
-                  │
-                  ▼
-        ┌───────────────────┐
-        │    PERFORMANCE    │
-        └─────────┬─────────┘
-                  │
-                  ▼
-        ┌───────────────────┐
-        │    EXPERIENCE     │
-        └─────────┬─────────┘
-                  │
-                  ▼
-        ┌───────────────────┐
-        │      IMPACT       │
-        └───────────────────┘
-```
-
-**Less noise. More focus.**
-
----
-
-## 🧪 Development
+# 🧪 DEVELOPMENT COMMANDS
 
 ```bash
-# Development
-npm run dev
-
-# Production build
-npm run build
-
-# Preview production
-npm run preview
-
-# Lint
-npm run lint
+npm run dev       # Development server
+npm run build     # Production build
+npm run preview   # Preview production
+npm run lint      # Code quality check
 ```
 
 ---
 
-## 📊 Project Status
+# 📊 SYSTEM STATUS
 
 <div align="center">
 
-| Module        |     Status     |
-| :------------ | :------------: |
-| 🎨 UI/UX      |    🟢 Ready    |
-| ⚡ Performance |  🟢 Optimized  |
-| 📱 Responsive |    🟢 Ready    |
-| 🔐 Security   | 🟡 In Progress |
-| 🧪 Testing    | 🟡 In Progress |
-| 🚀 Production | 🔵 Coming Soon |
+| SYSTEM        |      STATUS      |
+| :------------ | :--------------: |
+| 🎨 UI / UX    |    🟢 `READY`    |
+| ⚡ PERFORMANCE |  🟢 `OPTIMIZED`  |
+| 📱 RESPONSIVE |    🟢 `READY`    |
+| 🔐 SECURITY   | 🟡 `IN PROGRESS` |
+| 🧪 TESTING    | 🟡 `IN PROGRESS` |
+| 🚀 PRODUCTION | 🔵 `COMING SOON` |
 
 </div>
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ TECHNOLOGY
 
 <div align="center">
 
-![HTML](https://img.shields.io/badge/HTML5-0099FF?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-0099FF?style=for-the-badge\&logo=css3\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-0099FF?style=for-the-badge\&logo=javascript\&logoColor=white)
-![Node](https://img.shields.io/badge/Node.js-0099FF?style=for-the-badge\&logo=node.js\&logoColor=white)
+<img src="https://img.shields.io/badge/HTML5-0099FF?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-0099FF?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-0099FF?style=for-the-badge&logo=javascript&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-0099FF?style=for-the-badge&logo=node.js&logoColor=white" />
 
 </div>
 
 ---
 
-## 🌟 Why This Project?
+# 🔥 UI PHILOSOPHY
 
-**Because ordinary is not enough.**
-
-Project ini dibuat untuk menghasilkan pengalaman yang terasa:
-
-> **Fast enough to feel instant.**
-> **Clean enough to feel simple.**
-> **Beautiful enough to remember.**
-
----
-
-## 🤝 Contributing
-
-Pull Request, issue, improvement, dan ide baru sangat terbuka.
+<div align="center">
 
 ```text
-Fork
-  ↓
-Create Branch
-  ↓
-Make Changes
-  ↓
-Commit
-  ↓
-Push
-  ↓
-Pull Request
+              ┌───────────────┐
+              │   SIMPLICITY  │
+              └───────┬───────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │  PERFORMANCE  │
+              └───────┬───────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │  EXPERIENCE   │
+              └───────┬───────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │    IMPACT     │
+              └───────────────┘
 ```
 
----
+### **LESS NOISE. MORE POWER.**
 
-## 📄 License
-
-Distributed under the **MIT License**.
-
-See `LICENSE` for more information.
+</div>
 
 ---
+
+# 🤝 CONTRIBUTING
 
 <div align="center">
 
-### ⚡ BUILD THE FUTURE
+### Want to contribute?
 
-**PROJECT NAME**
-
-`#0099FF` • `#00D4FF` • `#050B14`
+**Keep it simple.**
 
 <br>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving\&color=0099ff\&height=120\&section=footer)
+<a href="https://github.com/username/project-name/issues">
+<img src="https://img.shields.io/badge/REPORT_ISSUE-0099FF?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<a href="https://github.com/username/project-name/pulls">
+<img src="https://img.shields.io/badge/OPEN_PULL_REQUEST-00D4FF?style=for-the-badge&logo=github&logoColor=050B14" />
+</a>
+
+<br><br>
+
+`Issues → Ideas → Pull Requests → Better Project`
+
+</div>
+
+---
+
+# 📄 LICENSE
+
+Released under the **MIT License**.
+
+See [`LICENSE`](LICENSE) for details.
+
+---
+
+<div align="center">
+
+## ⚡ BUILD THE FUTURE
+
+### `PROJECT NAME`
+
+`#0099FF` · `#00D4FF` · `#050B14`
+
+<br>
+
+**If this project is useful, consider giving it a ⭐**
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0099ff&height=160&section=footer&animation=fadeIn" width="100%" />
 
 </div>
