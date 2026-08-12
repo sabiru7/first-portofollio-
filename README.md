@@ -352,13 +352,17 @@ npm run lint      # Code quality check
 
 <br>
 
-<a href="https://github.com/username/project-name/issues">
-<img src="https://img.shields.io/badge/REPORT_ISSUE-0099FF?style=for-the-badge&logo=github&logoColor=white" />
+<div align="center">
+
+<a href="https://dsc.gg/altherial">
+  <img src="https://img.shields.io/badge/DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
 </a>
 
-<a href="https://github.com/username/project-name/pulls">
-<img src="https://img.shields.io/badge/OPEN_PULL_REQUEST-00D4FF?style=for-the-badge&logo=github&logoColor=050B14" />
+<a href="https://guns.lol/USERNAME">
+  <img src="https://img.shields.io/badge/GUNS.LOL-0099FF?style=for-the-badge&logoColor=white" />
 </a>
+
+</div>
 
 <br><br>
 
