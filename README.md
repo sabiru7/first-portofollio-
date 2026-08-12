@@ -52,8 +52,8 @@ Every section has a purpose — from the first interaction to the smallest hover
 
 | Technology | Purpose                    |
 | :--------- | :------------------------- |
-| HTML5      | Structure                  |
-| CSS3       | Design & animations        |
+| HTML       | Structure                  |
+| CSS        | Design & animations        |
 | JavaScript | Interactions               |
 | Git        | Version control            |
 | GitHub     | Collaboration & deployment |
@@ -69,14 +69,14 @@ The visual direction is intentionally minimal.
 ```text
 ┌─────────────────────────────────────────────┐
 │                                             │
-│   HELLO, I'M [NAME]                         │
+│   HELLO, I'M Sabiru7                        │
 │                                             │
 │   Developer / Designer / Creator            │
 │                                             │
 │   I build digital experiences that          │
 │   feel as good as they look.                │
 │                                             │
-│                       [ VIEW WORK → ]       │
+│                                             │
 │                                             │
 └─────────────────────────────────────────────┘
 ```
@@ -84,7 +84,6 @@ The visual direction is intentionally minimal.
 ### Design Principles
 
 * Minimal visual noise
-* Strong typography
 * High contrast
 * Subtle motion
 * Responsive layouts
@@ -100,16 +99,13 @@ portfolio/
 │
 ├── index.html
 │
-├── css/
-│   └── style.css
 │
 ├── js/
 │   └── script.js
 │
 ├── assets/
 │   ├── images/
-│   ├── icons/
-│   └── fonts/
+│   └── style.css/
 │
 └── README.md
 ```
@@ -196,5 +192,5 @@ If you'd like to talk, collaborate, or just say hello:
 <p align="center">
   <sub>Designed & built with intention.</sub>
   <br>
-  <sub>© 2026 [YOUR NAME]</sub>
+  <sub>© 2026 sabiru7</sub>
 </p>
