@@ -592,209 +592,345 @@
 
 .project-grid {
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
+
+/* =========================================================
+   CARD
+========================================================= */
+
 .project-card {
-  min-height: 360px;
-
   position: relative;
-
+  min-height: 0;
   overflow: hidden;
 
-  border-radius: 28px;
+  border: 1px solid #292929;
+  border-radius: 14px;
 
-  border: 1px solid rgba(255,255,255,.1);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(124,58,237,.18),
-      rgba(255,255,255,.02)
-    );
+  background: #111;
 
   transition:
-    transform .5s cubic-bezier(.2,.8,.2,1),
-    opacity .4s ease;
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
 }
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #444;
+  background: #141414;
+}
+
+
+/* =========================================================
+   LARGE PROJECT
+========================================================= */
 
 .project-large {
   grid-row: span 2;
-
-  min-height: 740px;
 }
+
+
+/* =========================================================
+   WIDE PROJECT
+========================================================= */
 
 .project-wide {
   grid-column: span 2;
 }
 
+
+/* =========================================================
+   INNER
+========================================================= */
+
 .project-inner {
   position: relative;
-
   height: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
 
-  min-height: inherit;
 
-  padding: 30px;
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
 
+.project-image-wrap {
+  position: relative;
+  width: 100%;
   overflow: hidden;
 
-  background: rgba(10,10,15,.7);
+  border: 1px solid #292929;
+  border-radius: 10px;
+
+  background: #0b0b0b;
 }
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
 .project-image {
-  width: 70%;
-  height: 160px;
-  object-fit: cover;
   display: block;
-  margin: 0 auto 20px;
-  border-radius: 12px;
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 9px;
+
+  transition:
+    transform 0.6s cubic-bezier(.2, .7, .2, 1),
+    filter 0.4s ease;
 }
 
-/* Project besar */
+.project-card:hover .project-image {
+  transform: scale(1.035);
+  filter: brightness(1.08);
+}
+
+
+/* =========================================================
+   LARGE IMAGE
+========================================================= */
+
 .project-large .project-image {
-  width: 75%;
-  height: 200px;
+  aspect-ratio: 16 / 10;
 }
 
-/* Project wide */
+
+/* =========================================================
+   WIDE IMAGE
+========================================================= */
+
 .project-wide .project-image {
-  width: 60%;
-  height: 180px;
+  aspect-ratio: 21 / 8;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .project-image,
-  .project-large .project-image,
-  .project-wide .project-image {
-    width: 90%;
-    height: 160px;
-  }
+
+/* =========================================================
+   PROJECT META
+========================================================= */
+
+.project-meta {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+  margin-top: 18px;
 }
+
+
+/* =========================================================
+   PROJECT NUMBER
+========================================================= */
+
 .project-number {
+  display: block;
+  margin: 0;
+
   font-family: "JetBrains Mono", monospace;
   font-size: 10px;
+  letter-spacing: .04em;
 
-  color: rgba(255,255,255,.3);
+  color: rgba(255, 255, 255, .3);
 }
 
+
+/* =========================================================
+   PROJECT TYPE
+========================================================= */
+
 .project-type {
-  float: right;
+  padding: 5px 9px;
 
-  padding: 6px 10px;
-
-  border: 1px solid rgba(255,255,255,.1);
-
+  border: 1px solid rgba(255, 255, 255, .1);
   border-radius: 999px;
 
   font-family: "JetBrains Mono", monospace;
   font-size: 8px;
+  white-space: nowrap;
 
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .025);
 }
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
 
 .project-content {
-  position: absolute;
+  position: relative;
+  z-index: 2;
 
-  left: 30px;
-  right: 30px;
-  bottom: 35px;
+  margin-top: 14px;
+  padding-right: 60px;
 }
 
-.project-content h3 {
-  font-size: 32px;
 
-  font-weight: 700;
-}
-
-.project-content p {
-  max-width: 550px;
-
-  margin-top: 12px;
-
-  color: rgba(255,255,255,.4);
-
-  line-height: 1.7;
-}
+/* =========================================================
+   SYMBOL
+========================================================= */
 
 .project-symbol {
-  margin-bottom: 20px;
+  display: block;
 
-  font-size: 60px;
+  margin-bottom: 12px;
 
-  transition: .5s;
+  font-size: 52px;
+  line-height: 1;
+
+  transform-origin: center left;
+
+  transition:
+    transform 0.5s cubic-bezier(.2, .8, .2, 1);
 }
 
 .project-card:hover .project-symbol {
-  transform: scale(1.15) rotate(10deg);
+  transform: scale(1.08) rotate(5deg);
 }
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.project-content h3 {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -.02em;
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.project-content p {
+  max-width: 620px;
+  margin: 9px 0 0;
+
+  font-size: 14px;
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, .4);
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
 
 .technologies {
   display: flex;
-
   flex-wrap: wrap;
+  gap: 6px;
 
-  gap: 7px;
-
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .technologies span {
   padding: 5px 9px;
 
-  border: 1px solid rgba(255,255,255,.08);
-
+  border: 1px solid rgba(255, 255, 255, .08);
   border-radius: 999px;
 
   font-family: "JetBrains Mono", monospace;
   font-size: 9px;
+  line-height: 1;
 
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .015);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
 }
+
+.project-card:hover .technologies span {
+  color: rgba(255, 255, 255, .65);
+  border-color: rgba(255, 255, 255, .14);
+}
+
+
+/* =========================================================
+   SIMPLE ARROW
+========================================================= */
 
 .project-arrow {
   position: absolute;
-
-  right: 30px;
-  bottom: 30px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
 
+  border: 1px solid rgba(255, 255, 255, .12);
   border-radius: 50%;
 
-  background: white;
+  color: #fff;
+  background: rgba(255, 255, 255, .04);
 
-  color: black;
+  font-size: 17px;
+  line-height: 1;
 
-  transition: .4s;
+  transition:
+    transform 0.35s cubic-bezier(.2, .8, .2, 1),
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
 }
 
-.project-arrow:hover {
-  transform: rotate(45deg);
+.project-card:hover .project-arrow {
+  transform: translate(2px, -2px);
+
+  color: #000;
+  border-color: #fff;
+  background: #fff;
 }
+
+
+/* =========================================================
+   VOID TEXT
+========================================================= */
 
 .void-text {
   position: absolute;
+  right: 15px;
+  bottom: -35px;
+  z-index: 0;
 
-  right: 20px;
-  bottom: -30px;
-
-  font-size: 180px;
-
+  font-size: 160px;
   line-height: 1;
-
   font-weight: 900;
+  letter-spacing: -.08em;
 
-  color: rgba(255,255,255,.025);
+  color: rgba(255, 255, 255, .018);
+
+  pointer-events: none;
+  user-select: none;
 }
 
 
@@ -814,52 +950,146 @@
 .stack-section {
   max-width: none;
 
-  border-top: 1px solid rgba(255,255,255,.1);
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
 .stack-section > .section-grid {
   max-width: 1280px;
-
   margin: auto;
 }
 
 .stack-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
 
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .stack-grid div {
-  min-height: 120px;
+  min-height: 110px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
-  border-top: 1px solid rgba(255,255,255,.1);
-  border-left: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-left: 1px solid rgba(255, 255, 255, .1);
 
   font-family: "JetBrains Mono", monospace;
   font-size: 10px;
 
-  color: rgba(255,255,255,.35);
+  color: rgba(255, 255, 255, .35);
 
-  transition: .3s;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .stack-grid div:hover {
-  color: white;
-
-  background: rgba(139,92,246,.08);
-
+  color: #fff;
+  background: rgba(139, 92, 246, .08);
   transform: translateY(-3px);
 }
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* Card */
+  .project-large,
+  .project-wide {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  /* Inner */
+  .project-inner {
+    padding: 14px;
+  }
+
+  /* Image */
+  .project-image,
+  .project-large .project-image,
+  .project-wide .project-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Meta */
+  .project-meta {
+    margin-top: 14px;
+  }
+
+  /* Content */
+  .project-content {
+    margin-top: 12px;
+    padding-right: 52px;
+  }
+
+  /* Symbol */
+  .project-symbol {
+    margin-bottom: 9px;
+    font-size: 42px;
+  }
+
+  /* Title */
+  .project-content h3 {
+    font-size: 25px;
+  }
+
+  /* Description */
+  .project-content p {
+    margin-top: 8px;
+
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Technologies */
+  .technologies {
+    margin-top: 12px;
+  }
+
+  /* Arrow */
+  .project-arrow {
+    right: 14px;
+    bottom: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    font-size: 15px;
+  }
+
+  /* Void */
+  .void-text {
+    right: 5px;
+    bottom: -15px;
+
+    font-size: 90px;
+  }
+
+  /* Stack */
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+  }
+
+  .stack-grid div {
+    min-height: 90px;
+  }
+}
 /* =========================================================
    CONTACT
 ========================================================= */
