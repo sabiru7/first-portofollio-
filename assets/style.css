@@ -1,6 +1,8 @@
+
 /* =========================================================
    SAKADEV — MAIN STYLESHEET
    Dark / Experimental / Creative Developer
+   Contributor — Pinky Yellow Edition
 ========================================================= */
 
 
@@ -19,7 +21,6 @@
 :root {
   --bg: #050505;
   --bg-soft: #0a0a0a;
-
   --surface: rgba(255, 255, 255, 0.045);
   --surface-hover: rgba(255, 255, 255, 0.075);
 
@@ -29,14 +30,18 @@
 
   --purple: #8b5cf6;
   --purple-bright: #a78bfa;
-
   --cyan: #22d3ee;
+
+  /* Pink + Yellow */
+  --pink: #ff69b4;
+  --pink-bright: #ff9ed2;
+  --yellow: #ffe45e;
+  --yellow-soft: #fff1a8;
 
   --border: rgba(255, 255, 255, 0.1);
   --border-light: rgba(255, 255, 255, 0.16);
 
   --max-width: 1280px;
-
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -123,33 +128,27 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   inset: 0;
   z-index: -10;
-
   overflow: hidden;
   pointer-events: none;
 }
 
 .glow {
   position: absolute;
-
   width: 500px;
   height: 500px;
-
   border-radius: 50%;
-
   filter: blur(150px);
 }
 
 .glow-purple {
   top: -200px;
   left: -150px;
-
   background: rgba(124, 58, 237, 0.2);
 }
 
 .glow-cyan {
   right: -150px;
   top: 25%;
-
   background: rgba(34, 211, 238, 0.1);
 }
 
@@ -254,7 +253,6 @@ body::-webkit-scrollbar-thumb:hover {
 .cursor-ring-hover {
   width: 65px !important;
   height: 65px !important;
-
   border-color: var(--purple) !important;
 }
 
@@ -265,7 +263,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar {
   position: fixed;
-
   top: 0;
   left: 0;
 
@@ -288,11 +285,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .nav-container {
   max-width: 1280px;
-
   margin: auto;
 
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 
@@ -316,7 +311,6 @@ body::-webkit-scrollbar-thumb:hover {
     monospace;
 
   font-size: 15px;
-
   font-weight: 700;
 
   letter-spacing: 0.14em;
@@ -335,7 +329,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .desktop-nav {
   display: flex;
-
   align-items: center;
 
   gap: 32px;
@@ -382,7 +375,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .desktop-nav a:hover {
   color: white;
-
   transform: translateY(-2px);
 }
 
@@ -392,15 +384,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .nav-actions {
   display: flex;
-
   align-items: center;
-
   gap: 14px;
 }
 
 .talk-button {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 
@@ -409,11 +398,9 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 999px;
 
   background: white;
-
   color: black;
 
   font-size: 11px;
-
   font-weight: 700;
 
   transition:
@@ -462,7 +449,6 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
 
   display: flex;
-
   align-items: center;
 
   padding:
@@ -473,7 +459,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .hero-content {
   width: 100%;
-
   max-width: 1280px;
 
   margin: auto;
@@ -496,7 +481,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .availability {
   display: flex;
-
   align-items: center;
 
   gap: 10px;
@@ -608,7 +592,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .hero-buttons {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 15px;
@@ -620,7 +603,6 @@ body::-webkit-scrollbar-thumb:hover {
 .secondary-button,
 .email-button {
   display: inline-flex;
-
   align-items: center;
 
   padding: 16px 26px;
@@ -628,7 +610,6 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 999px;
 
   font-size: 12px;
-
   font-weight: 700;
 
   transition:
@@ -640,13 +621,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .primary-button {
   background: white;
-
   color: black;
 }
 
 .primary-button:hover {
   background: var(--purple-bright);
-
   transform: scale(1.03);
 }
 
@@ -660,7 +639,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .secondary-button:hover {
   border-color: white;
-
   transform: scale(1.03);
 }
 
@@ -698,7 +676,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .orb-ring {
   position: absolute;
-
   inset: 0;
 
   border:
@@ -752,7 +729,6 @@ body::-webkit-scrollbar-thumb:hover {
   inset: 155px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -874,7 +850,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .marquee-content {
   display: flex;
-
   align-items: center;
 
   gap: 30px;
@@ -1009,15 +984,75 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* =========================================================
    CONTRIBUTOR
+   PINKY + YELLOW EDITION 💗💛
 ========================================================= */
 
 .contributor-section {
   position: relative;
 }
 
+
+/* Ambient glow */
+
+.contributor-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  left: -200px;
+  top: 25%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 105, 180, 0.18),
+      rgba(255, 220, 80, 0.09) 40%,
+      transparent 72%
+    );
+
+  filter: blur(55px);
+
+  pointer-events: none;
+
+  animation:
+    contributorAmbientGlow
+    7s
+    ease-in-out
+    infinite;
+}
+
+@keyframes contributorAmbientGlow {
+  0%,
+  100% {
+    transform:
+      translate(0, 0)
+      scale(1);
+
+    opacity: 0.65;
+  }
+
+  50% {
+    transform:
+      translate(40px, -25px)
+      scale(1.15);
+
+    opacity: 1;
+  }
+}
+
 .contributor-heading {
   margin-bottom: 50px;
 }
+
+
+/* =========================================================
+   CONTRIBUTOR CARD
+========================================================= */
 
 .contributor-card {
   position: relative;
@@ -1027,7 +1062,6 @@ body::-webkit-scrollbar-thumb:hover {
   overflow: hidden;
 
   display: flex;
-
   align-items: center;
 
   padding:
@@ -1038,57 +1072,323 @@ body::-webkit-scrollbar-thumb:hover {
 
   border:
     1px solid
-    var(--border);
+    rgba(255, 255, 255, 0.1);
 
   background:
     radial-gradient(
-      circle at 20% 50%,
-      rgba(139, 92, 246, 0.09),
+      circle at 12% 50%,
+      rgba(255, 105, 180, 0.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 30% 75%,
+      rgba(255, 220, 80, 0.08),
       transparent 30%
     ),
     rgba(255, 255, 255, 0.025);
 
   transition:
     border-color 0.4s ease,
-    transform 0.4s var(--ease);
+    transform 0.4s var(--ease),
+    box-shadow 0.4s ease;
+}
+
+
+/* Animated pink/yellow border */
+
+.contributor-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -2px;
+
+  z-index: 0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent 15%,
+      rgba(255, 105, 180, 0.7),
+      rgba(255, 220, 80, 0.7),
+      rgba(255, 105, 180, 0.4),
+      transparent 85%
+    );
+
+  background-size: 250% 250%;
+
+  opacity: 0;
+
+  transition:
+    opacity 0.5s ease;
+
+  animation:
+    contributorBorder
+    5s
+    linear
+    infinite;
+
+  pointer-events: none;
+}
+
+@keyframes contributorBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contributor-card:hover::before {
+  opacity: 1;
+}
+
+
+/* Inner layer */
+
+.contributor-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 1px;
+
+  z-index: 0;
+
+  border-radius: inherit;
+
+  background:
+    radial-gradient(
+      circle at 12% 50%,
+      rgba(255, 105, 180, 0.1),
+      transparent 28%
+    ),
+    rgba(7, 7, 7, 0.94);
+
+  pointer-events: none;
 }
 
 .contributor-card:hover {
   border-color:
-    rgba(167, 139, 250, 0.3);
+    rgba(255, 150, 210, 0.5);
 
   transform:
-    translateY(-5px);
+    translateY(-7px);
+
+  box-shadow:
+    0 25px 80px
+    rgba(255, 105, 180, 0.1),
+    0 0 50px
+    rgba(255, 220, 80, 0.04);
 }
 
+
+/* =========================================================
+   CONTRIBUTOR IMAGE
+========================================================= */
+
 .contributor-card img {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 45px;
+  top: 50%;
+
+  width: 190px;
+  height: 190px;
+
+  object-fit: cover;
+
+  transform:
+    translateY(-50%)
+    rotate(-3deg);
+
+  border-radius:
+    35%
+    65%
+    55%
+    45% /
+    55%
+    45%
+    65%
+    45%;
+
+  border:
+    2px solid
+    rgba(255, 255, 255, 0.16);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 105, 180, 0.2),
+      rgba(255, 220, 80, 0.15)
+    );
+
+  filter:
+    saturate(1.35)
+    contrast(1.05)
+    drop-shadow(
+      0 0 18px
+      rgba(255, 105, 180, 0.5)
+    )
+    drop-shadow(
+      0 0 35px
+      rgba(255, 220, 80, 0.22)
+    );
+
   transition:
-    transform 0.5s var(--ease),
-    filter 0.5s ease;
+    transform 0.6s var(--ease),
+    filter 0.5s ease,
+    border-radius 0.6s ease;
+
+  animation:
+    contributorImageFloat
+    5s
+    ease-in-out
+    infinite;
+}
+
+@keyframes contributorImageFloat {
+  0%,
+  100% {
+    transform:
+      translateY(-50%)
+      rotate(-3deg);
+  }
+
+  50% {
+    transform:
+      translateY(calc(-50% - 8px))
+      rotate(3deg);
+  }
 }
 
 .contributor-card:hover img {
   transform:
     translateY(-50%)
-    scale(1.04);
+    scale(1.08)
+    rotate(2deg);
+
+  border-radius:
+    50%
+    40%
+    55%
+    45% /
+    45%
+    55%
+    40%
+    60%;
 
   filter:
-    brightness(1.1);
+    saturate(1.5)
+    brightness(1.08)
+    contrast(1.05)
+    drop-shadow(
+      0 0 22px
+      rgba(255, 105, 180, 0.75)
+    )
+    drop-shadow(
+      0 0 48px
+      rgba(255, 220, 80, 0.38)
+    );
 }
 
+
+/* =========================================================
+   IMAGE SHINE
+========================================================= */
+
+.contributor-image-shine {
+  position: absolute;
+
+  z-index: 4;
+
+  left: 45px;
+  top: 50%;
+
+  width: 190px;
+  height: 190px;
+
+  transform:
+    translateY(-50%)
+    translateX(-135%)
+    rotate(10deg);
+
+  border-radius: 40%;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 25%,
+      rgba(255, 255, 255, 0.5),
+      transparent 70%
+    );
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.contributor-card:hover
+.contributor-image-shine {
+  opacity: 1;
+
+  animation:
+    contributorShine
+    0.9s
+    ease
+    forwards;
+}
+
+@keyframes contributorShine {
+  from {
+    transform:
+      translateY(-50%)
+      translateX(-135%)
+      rotate(10deg);
+  }
+
+  to {
+    transform:
+      translateY(-50%)
+      translateX(135%)
+      rotate(10deg);
+  }
+}
+
+
+/* =========================================================
+   CONTRIBUTOR INFO
+========================================================= */
+
 .contributor-info {
+  position: relative;
+
+  z-index: 3;
+
   max-width: 650px;
 }
 
 .contributor-role {
   color:
-    var(--purple-bright);
+    var(--pink-bright);
 
   font-size: 9px;
 
   font-weight: 800;
 
   letter-spacing: 0.18em;
+
+  text-shadow:
+    0 0 15px
+    rgba(255, 105, 180, 0.55);
 }
 
 .contributor-info h3 {
@@ -1102,6 +1402,39 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1;
 
   letter-spacing: -0.05em;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #ff9ed2 25%,
+      #ffe477 50%,
+      #ff9ed2 75%,
+      #ffffff 100%
+    );
+
+  background-size: 250% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation:
+    contributorTextGradient
+    6s
+    linear
+    infinite;
+}
+
+@keyframes contributorTextGradient {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 250% center;
+  }
 }
 
 .contributor-info p {
@@ -1114,6 +1447,11 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.8;
 }
 
+
+/* =========================================================
+   CONTRIBUTOR TAGS
+========================================================= */
+
 .contributor-tags {
   display: flex;
 
@@ -1125,20 +1463,55 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contributor-tags span {
-  padding: 7px 10px;
+  padding:
+    7px
+    10px;
 
   border:
     1px solid
-    var(--border);
+    rgba(255, 255, 255, 0.1);
 
-  color: #777;
+  color: #999;
 
   font-size: 8px;
 
   font-weight: 800;
 
   letter-spacing: 0.1em;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+.contributor-tags span:hover {
+  color: #fff;
+
+  border-color:
+    rgba(255, 150, 210, 0.55);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 105, 180, 0.13),
+      rgba(255, 220, 80, 0.09)
+    );
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 5px 20px
+    rgba(255, 105, 180, 0.1);
+}
+
+
+/* =========================================================
+   CONTRIBUTOR STATUS
+========================================================= */
 
 .contributor-status {
   position: absolute;
@@ -1146,13 +1519,14 @@ body::-webkit-scrollbar-thumb:hover {
   top: 24px;
   right: 24px;
 
-  display: flex;
+  z-index: 5;
 
+  display: flex;
   align-items: center;
 
   gap: 7px;
 
-  color: #555;
+  color: #666;
 
   font-size: 8px;
 
@@ -1167,10 +1541,43 @@ body::-webkit-scrollbar-thumb:hover {
 
   border-radius: 50%;
 
-  background: #4ade80;
+  background: var(--yellow);
 
   box-shadow:
-    0 0 10px #4ade80;
+    0 0 8px var(--yellow),
+    0 0 18px
+    rgba(255, 105, 180, 0.7);
+
+  animation:
+    pinkYellowPulse
+    2s
+    ease-in-out
+    infinite;
+}
+
+@keyframes pinkYellowPulse {
+  0%,
+  100% {
+    transform: scale(1);
+
+    background: var(--yellow);
+
+    box-shadow:
+      0 0 8px var(--yellow),
+      0 0 15px
+      rgba(255, 105, 180, 0.5);
+  }
+
+  50% {
+    transform: scale(1.5);
+
+    background: var(--pink-bright);
+
+    box-shadow:
+      0 0 12px var(--pink-bright),
+      0 0 25px
+      rgba(255, 220, 80, 0.7);
+  }
 }
 
 
@@ -1182,7 +1589,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 
   justify-content: space-between;
-
   align-items: flex-end;
 
   gap: 30px;
@@ -1217,7 +1623,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .filter-button {
-  padding: 9px 15px;
+  padding:
+    9px
+    15px;
 
   border:
     1px solid
@@ -1248,7 +1656,8 @@ body::-webkit-scrollbar-thumb:hover {
 .filter-button.active {
   color: white;
 
-  border-color: var(--purple);
+  border-color:
+    var(--purple);
 
   background:
     rgba(139, 92, 246, 0.1);
@@ -1377,6 +1786,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
 
   width: 100%;
+
   height: auto;
 
   aspect-ratio:
@@ -1389,11 +1799,13 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 9px;
 
   transition:
-    transform 0.6s cubic-bezier(.2, .7, .2, 1),
+    transform 0.6s
+    cubic-bezier(.2, .7, .2, 1),
     filter 0.4s ease;
 }
 
-.project-card:hover .project-image {
+.project-card:hover
+.project-image {
   transform:
     scale(1.035);
 
@@ -1442,11 +1854,6 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 18px;
 }
 
-
-/* =========================================================
-   PROJECT NUMBER
-========================================================= */
-
 .project-number {
   display: block;
 
@@ -1464,13 +1871,10 @@ body::-webkit-scrollbar-thumb:hover {
     rgba(255, 255, 255, 0.3);
 }
 
-
-/* =========================================================
-   PROJECT TYPE
-========================================================= */
-
 .project-type {
-  padding: 5px 9px;
+  padding:
+    5px
+    9px;
 
   border:
     1px solid
@@ -1530,7 +1934,8 @@ body::-webkit-scrollbar-thumb:hover {
     cubic-bezier(.2, .8, .2, 1);
 }
 
-.project-card:hover .project-symbol {
+.project-card:hover
+.project-symbol {
   transform:
     scale(1.08)
     rotate(5deg);
@@ -1558,7 +1963,8 @@ body::-webkit-scrollbar-thumb:hover {
     color 0.3s ease;
 }
 
-.project-card:hover .project-content h3 {
+.project-card:hover
+.project-content h3 {
   color:
     var(--purple-bright);
 }
@@ -1598,7 +2004,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .technologies span {
-  padding: 5px 9px;
+  padding:
+    5px
+    9px;
 
   border:
     1px solid
@@ -1626,7 +2034,8 @@ body::-webkit-scrollbar-thumb:hover {
     background 0.3s ease;
 }
 
-.project-card:hover .technologies span {
+.project-card:hover
+.technologies span {
   color:
     rgba(255, 255, 255, 0.65);
 
@@ -1653,7 +2062,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   width: 38px;
@@ -1682,7 +2090,8 @@ body::-webkit-scrollbar-thumb:hover {
     background 0.3s ease;
 }
 
-.project-card:hover .project-arrow {
+.project-card:hover
+.project-arrow {
   transform:
     translate(2px, -2px);
 
@@ -1760,7 +2169,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   border-top:
@@ -1912,7 +2320,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 
   align-items: flex-start;
-
   justify-content: center;
 
   padding:
@@ -1974,7 +2381,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 
   align-items: center;
-
   justify-content: space-between;
 
   padding: 15px;
@@ -2174,7 +2580,6 @@ body::-webkit-scrollbar-thumb:hover {
   .project-large,
   .project-wide {
     grid-column: auto;
-
     grid-row: auto;
   }
 
@@ -2208,7 +2613,6 @@ body::-webkit-scrollbar-thumb:hover {
   .project-large,
   .project-wide {
     grid-row: auto;
-
     grid-column: auto;
   }
 
@@ -2363,6 +2767,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 14px;
   }
 
+
+  /* =======================================================
+     CONTRIBUTOR MOBILE
+  ======================================================= */
+
   .contributor-card {
     min-height: auto;
 
@@ -2383,22 +2792,46 @@ body::-webkit-scrollbar-thumb:hover {
 
     transform:
       translateX(-50%) !important;
+
+    animation:
+      contributorMobileFloat
+      5s
+      ease-in-out
+      infinite;
+  }
+
+  @keyframes contributorMobileFloat {
+
+    0%,
+    100% {
+      transform:
+        translateX(-50%)
+        rotate(-3deg);
+    }
+
+    50% {
+      transform:
+        translateX(-50%)
+        translateY(-8px)
+        rotate(3deg);
+    }
   }
 
   .contributor-card:hover img {
     transform:
       translateX(-50%)
-      scale(1.04) !important;
+      scale(1.05)
+      rotate(2deg) !important;
   }
 
-  .contributor-status {
-    top: 15px;
-    right: 15px;
+  .contributor-image-shine {
+    display: none;
   }
 
   .contributor-info h3 {
     font-size: 48px;
   }
+
 
   .work-title {
     font-size:
@@ -2438,8 +2871,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .contact-title {
-    font-size:
-      19vw;
+    font-size: 19vw;
   }
 
   .contact-description {
@@ -2558,10 +2990,13 @@ body::-webkit-scrollbar-thumb:hover {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration:
+      0.01ms !important;
 
-    animation-iteration-count: 1 !important;
+    animation-iteration-count:
+      1 !important;
 
-    transition-duration: 0.01ms !important;
+    transition-duration:
+      0.01ms !important;
   }
 }
