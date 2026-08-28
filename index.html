@@ -1,123 +1,186 @@
+```html
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>sakadev — Solo Developer</title>
+  <title>Sakadev — Solo Developer</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-
+  <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/style.css">
+
+  <!-- Preload hero/project image yang paling penting -->
+  <link
+    rel="preload"
+    as="image"
+    href="./assets/images/portofolio.png"
+  >
 </head>
 
-<body class="bg-black text-white antialiased overflow-x-hidden">
 
-  <!-- Cursor -->
-  <div id="cursor"></div>
-  <div id="cursor-ring"></div>
+<body>
 
-  <!-- Background -->
-  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+  <!-- =====================================================
+       CUSTOM CURSOR
+  ====================================================== -->
+
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <div
+    class="background"
+    aria-hidden="true"
+  >
     <div class="glow glow-purple"></div>
     <div class="glow glow-cyan"></div>
-
     <div class="grid-background"></div>
-
     <div class="vignette"></div>
   </div>
 
 
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 right-0 z-50 px-4 py-5">
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
 
-    <div class="nav-container">
+  <header class="navbar">
 
-      <a href="#home" class="logo">
+    <nav class="nav-container">
+
+      <a
+        href="#home"
+        class="logo"
+        data-scramble
+      >
         SAKADEV<span>.</span>
       </a>
 
+
       <div class="desktop-nav">
+
         <a href="#about">ABOUT</a>
+        <a href="#contributor">SUPPORT</a>
         <a href="#work">WORK</a>
         <a href="#stack">STACK</a>
         <a href="#contact">CONTACT</a>
+
       </div>
 
-      <button id="menu-button" class="mobile-menu-button">
-        MENU
-      </button>
 
-      <a href="https://guns.lol/sakadev" class="talk-button">
-        LET'S CHAT ↗
-      </a>
+      <div class="nav-actions">
 
-    </div>
+        <button
+          id="menu-button"
+          class="mobile-menu-button"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          MENU
+        </button>
 
 
-    <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="mobile-menu hidden">
+        <a
+          href="https://guns.lol/sakadev"
+          class="talk-button magnetic"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LET'S CHAT ↗
+        </a>
+
+      </div>
+
+    </nav>
+
+
+    <!-- Mobile menu -->
+
+    <div
+      id="mobile-menu"
+      class="mobile-menu hidden"
+    >
 
       <a href="#about">ABOUT</a>
+      <a href="#contributor">SUPPORT</a>
       <a href="#work">WORK</a>
       <a href="#stack">STACK</a>
       <a href="#contact">CONTACT</a>
 
     </div>
 
-  </nav>
+  </header>
 
 
-  <main class="relative z-10">
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
 
 
-    <!-- HERO -->
-    <section id="home" class="hero-section">
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+    <section
+      id="home"
+      class="hero-section"
+    >
 
       <div class="hero-content">
 
-        <div data-reveal>
+        <div class="hero-copy">
 
           <div class="availability">
             <span></span>
             AVAILABLE FOR HIRE PROJECTS
           </div>
 
+
           <p class="eyebrow">
             HELLO, I'M
           </p>
 
+
           <h1 class="hero-title">
-
             SABIL
-
             <br>
-
             <span data-glitch>EKA</span>
-
           </h1>
 
+
           <p class="hero-description">
-
             Creative Developer yang membangun
-
             <strong>digital experiences</strong>
-
             yang terasa cepat, hidup, dan sedikit
-
             <em>tidak masuk akal.</em>
-
           </p>
 
 
           <div class="hero-buttons">
 
-            <a href="#work" class="magnetic primary-button">
+            <a
+              href="#work"
+              class="primary-button magnetic"
+            >
               EXPLORE MY WORK
               <span>→</span>
             </a>
 
-            <a href="#contact" class="magnetic secondary-button">
+            <a
+              href="#contact"
+              class="secondary-button magnetic"
+            >
               START A PROJECT
             </a>
 
@@ -126,35 +189,37 @@
         </div>
 
 
-        <!-- Experimental Orb -->
+        <!-- Lightweight orb -->
 
-        <div class="hero-orb" data-reveal>
+        <div
+          class="hero-orb"
+          aria-hidden="true"
+        >
 
           <div class="orb-ring ring-1"></div>
           <div class="orb-ring ring-2"></div>
           <div class="orb-ring ring-3"></div>
 
-          <div class="orb-glow"></div>
-
           <div class="orb-core">
             <span>SKILLS</span>
           </div>
 
-          <div class="floating-label label-1">
+          <span class="floating-label label-1">
             &lt;/Creative&gt;
-          </div>
+          </span>
 
-          <div class="floating-label label-2">
+          <span class="floating-label label-2">
             JavaScript, Node.js, React
-          </div>
+          </span>
 
-          <div class="floating-label label-3">
+          <span class="floating-label label-3">
             HTML, CSS, Tailwind
-          </div>
+          </span>
 
         </div>
 
       </div>
+
 
       <div class="scroll-indicator">
         SCROLL TO EXPLORE ↓
@@ -163,7 +228,9 @@
     </section>
 
 
-    <!-- MARQUEE -->
+    <!-- ===================================================
+         MARQUEE
+    ==================================================== -->
 
     <section class="marquee-section">
 
@@ -183,18 +250,6 @@
           <span>INTERACTIVE WEB</span>
           <b>✦</b>
 
-          <span>CREATIVE DEVELOPMENT</span>
-          <b>✦</b>
-
-          <span>BACKEND ENGINEERING</span>
-          <b>✦</b>
-
-          <span>SOFTWARE</span>
-          <b>✦</b>
-
-          <span>INTERACTIVE WEB</span>
-          <b>✦</b>
-
         </div>
 
       </div>
@@ -202,36 +257,47 @@
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- ===================================================
+         ABOUT
+    ==================================================== -->
 
-    <section id="about" class="section">
+    <section
+      id="about"
+      class="section"
+    >
 
       <div class="section-grid">
 
-        <div data-reveal>
+        <div>
           <span class="section-number">
             01 / ABOUT
           </span>
         </div>
 
-        <div data-reveal>
+
+        <div>
 
           <h2 class="large-heading">
-
-            LETS GET TO <span> KNOW ME. </span>
+            LET'S GET TO
+            <span>KNOW ME.</span>
           </h2>
+
 
           <div class="about-text">
 
             <p>
-              Saya adalah seorang backend developer yang berfokus pada pengembangan web dan software. 
-              Saya memiliki pengalaman dalam membangun produk digital yang inovatif dan interaktif.
+              Saya adalah seorang backend developer
+              yang berfokus pada pengembangan web
+              dan software. Saya memiliki pengalaman
+              dalam membangun produk digital yang
+              inovatif dan interaktif.
             </p>
 
             <p>
-              Saya senang menggabungkan teknologi dengan desain
-              eksperimental untuk membuat produk yang bukan hanya
-              bekerja dengan baik, tetapi juga memiliki karakter.
+              Saya senang menggabungkan teknologi
+              dengan desain eksperimental untuk
+              membuat produk yang bukan hanya bekerja
+              dengan baik, tetapi juga memiliki karakter.
             </p>
 
           </div>
@@ -243,20 +309,127 @@
     </section>
 
 
-    <!-- WORK -->
+    <!-- ===================================================
+         SUPPORT SYSTEM
+    ==================================================== -->
 
-    <section id="work" class="section">
+    <section
+      id="contributor"
+      class="section contributor-section"
+    >
+
+      <div class="section-grid">
+
+        <div>
+          <span class="section-number">
+            02 / SUPPORT SYSTEM
+          </span>
+        </div>
+
+
+        <div>
+
+          <div class="contributor-heading">
+
+            <span class="section-kicker">
+              BEHIND THE CODE
+            </span>
+
+            <h2 class="large-heading">
+              NOT EVERYTHING
+              <span>WAS BUILT ALONE.</span>
+            </h2>
+
+          </div>
+
+
+          <article class="contributor-card">
+
+            <div
+              class="contributor-particles"
+              aria-hidden="true"
+            ></div>
+
+
+            <img
+              src="assets/images/della.jpg"
+              alt="DELLA"
+              style="
+                position: absolute;
+                left: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 220px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 50%;
+                z-index: 5;
+                border: 2px solid rgba(255,255,255,0.2);
+                box-shadow: 0 0 35px rgba(255,255,255,0.12);
+              "
+            >
+
+
+            <div class="contributor-info">
+
+              <span class="contributor-role">
+                SUPPORT SYSTEM
+              </span>
+
+              <h3>
+                DELLA
+              </h3>
+
+              <p>
+                Della adalah orang yang selalu ada
+                untuk mendukung saya dalam setiap
+                langkah dan keputusan. Tanpa dia,
+                perjalanan ini tidak akan sama.
+              </p>
+
+
+              <div class="contributor-tags">
+                <span>SUPPORT</span>
+                <span>PATIENT</span>
+                <span>THE REAL MVP</span>
+              </div>
+
+            </div>
+
+
+            <div class="contributor-status">
+              <span></span>
+              ALWAYS THERE
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         WORK
+    ==================================================== -->
+
+    <section
+      id="work"
+      class="section"
+    >
 
       <div class="work-header">
 
-        <div data-reveal>
+        <div>
 
           <span class="section-number">
-            02 / SELECTED WORK
+            03 / SELECTED WORK
           </span>
 
           <h2 class="work-title">
-            PROJECTS 
+            PROJECTS
             <br>
             <span>I BUILT.</span>
           </h2>
@@ -264,31 +437,42 @@
         </div>
 
 
-        <!-- FILTER -->
-
-        <div id="filters" class="filters">
+        <div
+          id="filters"
+          class="filters"
+          role="group"
+          aria-label="Project filters"
+        >
 
           <button
             class="filter-button active"
-            data-filter="all">
+            data-filter="all"
+            type="button"
+          >
             ALL
           </button>
 
           <button
             class="filter-button"
-            data-filter="web">
+            data-filter="web"
+            type="button"
+          >
             WEB
           </button>
 
           <button
             class="filter-button"
-            data-filter="mobile">
+            data-filter="mobile"
+            type="button"
+          >
             SOFTWARE
           </button>
 
           <button
             class="filter-button"
-            data-filter="ai">
+            data-filter="ai"
+            type="button"
+          >
             AI
           </button>
 
@@ -297,428 +481,372 @@
       </div>
 
 
-<!-- =========================================
-     PROJECT GRID
-========================================= -->
+      <!-- Projects -->
 
-<section class="projects-section" id="projects">
+      <div class="projects-heading">
 
-  <div class="projects-heading" data-reveal>
+        <span class="section-kicker">
+          SELECTED WORKS
+        </span>
 
-    <span class="section-kicker">
-      SELECTED WORKS
-    </span>
+        <h2>
+          PROJECT<span>S</span>
+        </h2>
 
-    <h2>
-      PROJECT<span>S</span>
-    </h2>
-
-    <p>
-      Beberapa project, eksperimen, dan karya digital
-      yang pernah saya kerjakan.
-    </p>
-
-  </div>
-
-
-  <div id="project-grid" class="project-grid">
-
-
-    <!-- =========================================
-         PROJECT 01
-    ========================================== -->
-
-    <article
-      class="project-card project-alpha"
-      data-category="web"
-      data-reveal
-      style="--delay: .05s"
-    >
-
-      <div class="project-inner">
-
-        <div class="project-media">
-
-          <img
-            src="assets/images/klinik.png"
-            alt="Website Klinik"
-            class="project-image"
-          >
-
-          <div class="image-overlay"></div>
-          <div class="image-noise"></div>
-
-          <span class="project-index">001</span>
-
-          <span class="project-category">
-            WEBSITE
-          </span>
-
-          <div class="project-status">
-            <span></span>
-            COMPLETED
-          </div>
-
-        </div>
-
-
-        <div class="project-content">
-
-          <div class="project-top">
-
-            <span class="project-label">
-              WEB DEVELOPMENT
-            </span>
-
-            <span class="project-year">
-              2026
-            </span>
-
-          </div>
-
-
-          <div class="project-icon">
-            +
-          </div>
-
-
-          <h3>
-            Website Klinik
-          </h3>
-
-
-          <p>
-            Website sederhana untuk menampilkan informasi
-            klinik, layanan, dan beberapa fitur dasar
-            lainnya dengan interface yang clean.
-          </p>
-
-
-          <div class="technologies">
-            <span>Laravel 11</span>
-            <span>Tailwind</span>
-            <span>JavaScript</span>
-            <span>MySQL</span>
-          </div>
-
-
-          <a
-            href="https://github.com/sabiru7/website-klinik-depok"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-arrow"
-            aria-label="Open Website Klinik project"
-          >
-            ↗
-          </a>
-
-        </div>
+        <p>
+          Beberapa project, eksperimen, dan karya
+          digital yang pernah saya kerjakan.
+        </p>
 
       </div>
 
-    </article>
+
+      <div
+        id="project-grid"
+        class="project-grid"
+      >
 
 
+        <!-- PROJECT 01 -->
 
-    <!-- =========================================
-         PROJECT 02
-    ========================================== -->
+        <article
+          class="project-card"
+          data-category="web"
+        >
 
-    <article
-      class="project-card project-neural"
-      data-category="ai"
-      data-reveal
-      style="--delay: .12s"
-    >
+          <div class="project-media">
 
-      <div class="project-inner">
+            <img
+              src="./assets/images/klinik.png"
+              alt="Website Klinik"
+              class="project-image"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800"
+            >
 
-        <div class="project-media">
-
-          <img
-            src="assets/images/muai.png"
-            alt="Muai AI"
-            class="project-image"
-          >
-
-          <div class="image-overlay"></div>
-          <div class="image-noise"></div>
-
-          <div class="neural-lines">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
-
-          <span class="project-index">
-            002
-          </span>
-
-          <span class="project-category">
-            ARTIFICIAL INTELLIGENCE
-          </span>
-
-        </div>
-
-
-        <div class="project-content">
-
-          <div class="project-top">
-
-            <span class="project-label">
-              AI EXPERIMENT
+            <span class="project-index">
+              001
             </span>
 
-            <span class="project-year">
-              2026
+            <span class="project-category">
+              WEBSITE
             </span>
 
           </div>
 
 
-          <div class="project-icon neural-icon">
-            ✦
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-label">
+                WEB DEVELOPMENT
+              </span>
+
+              <span class="project-year">
+                2026
+              </span>
+
+            </div>
+
+
+            <h3>
+              Website Klinik
+            </h3>
+
+
+            <p>
+              Website sederhana untuk menampilkan
+              informasi klinik, layanan, dan beberapa
+              fitur dasar lainnya dengan interface
+              yang clean.
+            </p>
+
+
+            <div class="technologies">
+              <span>Laravel 11</span>
+              <span>Tailwind</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+            </div>
+
+
+            <a
+              href="https://github.com/sabiru7/website-klinik-depok"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-arrow"
+              aria-label="Open Website Klinik project"
+            >
+              ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 02 -->
+
+        <article
+          class="project-card"
+          data-category="ai"
+        >
+
+          <div class="project-media">
+
+            <img
+              src="./assets/images/muai.png"
+              alt="Muai AI"
+              class="project-image"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800"
+            >
+
+            <span class="project-index">
+              002
+            </span>
+
+            <span class="project-category">
+              ARTIFICIAL INTELLIGENCE
+            </span>
+
           </div>
 
 
-          <h3>
-            Muai
-          </h3>
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-label">
+                AI EXPERIMENT
+              </span>
+
+              <span class="project-year">
+                2026
+              </span>
+
+            </div>
 
 
-          <p>
-            Eksperimen interface berbasis AI untuk
-            conversational experience dengan pendekatan
-            interface yang lebih interaktif.
-          </p>
+            <h3>
+              Muai
+            </h3>
 
 
-          <div class="technologies">
-            <span>AI</span>
-            <span>JavaScript</span>
-            <span>Node.js</span>
+            <p>
+              Eksperimen interface berbasis AI untuk
+              conversational experience dengan pendekatan
+              interface yang lebih interaktif.
+            </p>
+
+
+            <div class="technologies">
+              <span>AI</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+            </div>
+
+
+            <a
+              href="#"
+              class="project-arrow"
+              aria-label="Open Muai project"
+            >
+              ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 03 -->
+
+        <article
+          class="project-card"
+          data-category="mobile"
+        >
+
+          <div class="project-media">
+
+            <img
+              src="./assets/images/discord.png"
+              alt="Discord Server"
+              class="project-image"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800"
+            >
+
+            <span class="project-index">
+              003
+            </span>
+
+            <span class="project-category">
+              COMMUNITY
+            </span>
+
           </div>
 
 
-          <a
-            href="#"
-            class="project-arrow"
-            aria-label="Open Muai project"
-          >
-            ↗
-          </a>
+          <div class="project-content">
 
-        </div>
+            <div class="project-top">
+
+              <span class="project-label">
+                SERVER DEVELOPMENT
+              </span>
+
+              <span class="project-year">
+                2026
+              </span>
+
+            </div>
+
+
+            <h3>
+              Discord Server
+            </h3>
+
+
+            <p>
+              Pengembangan dan konfigurasi Discord
+              server yang dibuat sesuai dengan kebutuhan
+              dan request dari client.
+            </p>
+
+
+            <div class="technologies">
+              <span>Discord</span>
+              <span>MongoDB</span>
+              <span>Node.js</span>
+            </div>
+
+
+            <a
+              href="https://dsc.gg/nolmiringnol"
+              class="project-arrow"
+              aria-label="Open Discord Server project"
+            >
+              ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 04 -->
+
+        <article
+          class="project-card"
+          data-category="web"
+        >
+
+          <div class="project-media">
+
+            <img
+              src="./assets/images/portofolio.png"
+              alt="Portfolio Website"
+              class="project-image"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800"
+            >
+
+            <span class="project-index">
+              004
+            </span>
+
+            <span class="project-category">
+              PERSONAL
+            </span>
+
+          </div>
+
+
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-label">
+                PORTFOLIO
+              </span>
+
+              <span class="project-year">
+                2026
+              </span>
+
+            </div>
+
+
+            <h3>
+              Portfolio
+            </h3>
+
+
+            <p>
+              Project pertama portfolio saya dalam
+              beberapa tahun terakhir yang menampilkan
+              karya, eksperimen digital, dan perjalanan
+              saya dalam dunia development.
+            </p>
+
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+
+            <a
+              href="https://github.com/sabiru7/first-portofollio-"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-arrow"
+              aria-label="Open Portfolio project"
+            >
+              ↗
+            </a>
+
+          </div>
+
+        </article>
 
       </div>
 
-    </article>
+    </section>
 
 
+    <!-- ===================================================
+         STACK
+    ==================================================== -->
 
-    <!-- =========================================
-         PROJECT 03
-    ========================================== -->
-
-    <article
-      class="project-card project-pocket"
-      data-category="mobile"
-      data-reveal
-      style="--delay: .19s"
+    <section
+      id="stack"
+      class="section stack-section"
     >
-
-      <div class="project-inner">
-
-        <div class="project-media">
-
-          <img
-            src="assets/images/discord.png"
-            alt="Discord Server"
-            class="project-image"
-          >
-
-          <div class="image-overlay"></div>
-          <div class="image-noise"></div>
-
-          <div class="discord-glow"></div>
-
-          <span class="project-index">
-            003
-          </span>
-
-          <span class="project-category">
-            COMMUNITY
-          </span>
-
-        </div>
-
-
-        <div class="project-content">
-
-          <div class="project-top">
-
-            <span class="project-label">
-              SERVER DEVELOPMENT
-            </span>
-
-            <span class="project-year">
-              2026
-            </span>
-
-          </div>
-
-
-          <div class="project-icon">
-            ◎
-          </div>
-
-
-          <h3>
-            Discord Server
-          </h3>
-
-
-          <p>
-            Pengembangan dan konfigurasi Discord server
-            yang dibuat sesuai dengan kebutuhan dan
-            request dari client.
-          </p>
-
-
-          <div class="technologies">
-            <span>Discord</span>
-            <span>MongoDB</span>
-            <span>Node.js</span>
-          </div>
-
-
-          <a
-            href="https://dsc.gg/nolmiringnol"
-            class="project-arrow"
-            aria-label="Open Discord Server project"
-          >
-            ↗
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-
-    <!-- =========================================
-         PROJECT 04
-    ========================================== -->
-
-    <article
-      class="project-card project-sakadev"
-      data-category="web"
-      data-reveal
-      style="--delay: .26s"
-    >
-
-      <div class="project-inner">
-
-        <div class="project-media">
-
-          <img
-            src="assets/images/portofolio.png"
-            alt="Portfolio Website"
-            class="project-image"
-          >
-
-          <div class="image-overlay"></div>
-          <div class="image-noise"></div>
-
-          <div class="portfolio-orbit">
-            <span></span>
-          </div>
-
-          <span class="project-index">
-            004
-          </span>
-
-          <span class="project-category">
-            PERSONAL
-          </span>
-
-        </div>
-
-
-        <div class="project-content">
-
-          <div class="project-top">
-
-            <span class="project-label">
-              PORTFOLIO
-            </span>
-
-            <span class="project-year">
-              2026
-            </span>
-
-          </div>
-
-
-          <div class="project-icon">
-            ⌁
-          </div>
-
-
-          <h3>
-            Portfolio
-          </h3>
-
-
-          <p>
-            Project pertama portfolio saya dalam beberapa
-            tahun terakhir yang menampilkan karya,
-            eksperimen digital, dan perjalanan saya
-            dalam dunia development.
-          </p>
-
-
-          <div class="technologies">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-
-
-          <a
-            href="https://github.com/sabiru7/first-portofollio-"
-            class="project-arrow"
-            aria-label="Open Portfolio project"
-          >
-            ↗
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-  </div>
-
-</section>
-    <!-- STACK -->
-
-    <section id="stack" class="section stack-section">
 
       <div class="section-grid">
 
         <div>
+
           <span class="section-number">
-            03 / TOOLBOX
+            04 / TOOLBOX
           </span>
+
         </div>
 
-        <div data-reveal>
+
+        <div>
 
           <h2 class="large-heading">
             MY DIGITAL
@@ -733,10 +861,8 @@
             <div>MongoDB</div>
             <div>JavaScript</div>
             <div>Laravel</div>
-
             <div>TAILWIND</div>
             <div>NODE.JS</div>
-
             <div>GIT</div>
             <div>FIGMA</div>
             <div>AI</div>
@@ -750,39 +876,41 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- ===================================================
+         CONTACT
+    ==================================================== -->
 
-    <section id="contact" class="contact-section">
+    <section
+      id="contact"
+      class="contact-section"
+    >
 
-      <div data-reveal>
+      <div>
 
         <span class="section-number">
-          04 / CONTACT
+          05 / CONTACT
         </span>
 
-        <h2 class="contact-title">
 
+        <h2 class="contact-title">
           HAVE AN
           <span>IDEA?</span>
-
         </h2>
 
-        <p class="contact-description">
 
+        <p class="contact-description">
           Kalau kamu punya project, startup,
           eksperimen, atau sekadar ide aneh
           yang ingin diwujudkan, let's talk.
-
         </p>
+
 
         <a
           href="mailto:sabilmicrosoft12@gmail.com"
-          class="magnetic email-button">
-
+          class="magnetic email-button"
+        >
           sabilmicrosoft12@gmail.com
-
           <span>↗</span>
-
         </a>
 
       </div>
@@ -792,7 +920,9 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
 
   <footer class="footer">
 
@@ -811,36 +941,59 @@
   </footer>
 
 
-  <!-- COMMAND PALETTE -->
+  <!-- =====================================================
+       COMMAND PALETTE
+  ====================================================== -->
 
-  <div id="command-palette" class="command-overlay hidden">
+  <div
+    id="command-palette"
+    class="command-overlay hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Command palette"
+  >
 
     <div class="command-box">
 
       <input
         id="command-input"
-        type="text"
+        type="search"
+        autocomplete="off"
         placeholder="Type a command..."
+        aria-label="Search commands"
       >
+
 
       <div class="command-list">
 
-        <a href="#home" class="command-item">
+        <a
+          href="#home"
+          class="command-item"
+        >
           <span>Go to Home</span>
           <kbd>⌘1</kbd>
         </a>
 
-        <a href="#about" class="command-item">
+        <a
+          href="#about"
+          class="command-item"
+        >
           <span>About Me</span>
           <kbd>⌘2</kbd>
         </a>
 
-        <a href="#work" class="command-item">
+        <a
+          href="#work"
+          class="command-item"
+        >
           <span>Explore Work</span>
           <kbd>⌘3</kbd>
         </a>
 
-        <a href="#contact" class="command-item">
+        <a
+          href="#contact"
+          class="command-item"
+        >
           <span>Contact</span>
           <kbd>⌘4</kbd>
         </a>
@@ -852,9 +1005,14 @@
   </div>
 
 
-  <!-- HANYA INI YANG MEMANGGIL FILE JAVASCRIPT -->
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
-  <script src="./js/main.js"></script>
+  <script
+    src="./js/main.js"
+    defer
+  ></script>
 
 </body>
 </html>
